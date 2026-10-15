@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+}
+body{
+    background-color: #fdfbf7;
+    color: #2b2b2b;
+}
+ul li{
+    list-style: none;
+}
+/*start header*/
+.Navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 50px;
+    background-color:#eddde1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.logo img {
+    height: 50px;
+    width: 50px; 
+    border-radius: 50%; 
+}
+.nav-links {
+    list-style: none; 
+    display: flex;
+    gap: 30px; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: #2b2b2b;
+    font-weight: 500;
+    transition: 0.3s; 
+}
+
+.nav-links a:hover {
+    color: #9c4f40;
+}
+/*end header*/
+/*start home*/
+.home{
+    background-image: url(images/kat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    height: 100vh;
+}
+/* تنسيق صندوق النصوص داخل الواجهة الرئيسية */
+.text-home {
+    text-align: center; /* توسيط النص في المنتصف */
+    color: #ffffff;    /* جعل اللون أبيض ليوضح فوق الصورة */
+    padding: 0 20px;
+}
+
+.text-home h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* إضافة ظل خفيف للنص ليزداد وضوحاً */
+}
+
+.text-home p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.text-home span {
+    color: #d23512; /* لون وردي فاتح وراقي لاسم كاترينا كيف */
+    font-weight: 900;
+}
+
+/* تنسيق زر "تسوق الآن" (SHOP NOW) */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #b56554; /* لون الماركة الأساسي (Nude/Rose) */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* تأثير تغيير اللون عند تمرير الماوس فوق الزر */
+.btn:hover {
+    background-color: #9c4f40;
+    transform: translateY(-2px); /* حركة رفع خفيفة للأعلى */
+}
+/*end home*/
+/*start products*/
+/* جعل الحاوية الرئيسية مرنة وتترتب عناصرها عمودياً (العنوان أولاً ثم المنتجات) */
+.products {
+  display: flex;
+  flex-direction: column; /* يضمن نزل المنتجات تحت العنوان */
+  align-items: center;    /* لتوسيط العناصر في المنتصف */
+  padding: 20px;
+  background-color: #ebdfdf;
+}
+
+/* العنوان يظهر لوحده فوق */
+.products h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* يجعل المنتجات يصطفون بجانب بعضهم البعض أفقياً */
+.product1, .product2, .product3, .product4 {
+  display: inline-block; /* لضمان محاذاتها أفقياً */
+  width: 220px;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  vertical-align: top;
+}
+
+/* تنسيق الصور والحركة عند مرور الماوس */
+.products img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.products img:hover {
+  transform: scale(1.1); /* تكبير الصورة عند وضع الماوس */
+}
+
+/* تنسيق النصوص والأزرار */
+.products h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  color: #444;
+}
+
+.products .price {
+  font-size: 15px;
+  color: #27ae60;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.products .add {
+  background-color: #dba182;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.products .add:hover {
+  background-color: #9c4f40;
+}
+
+/*end pr0ducts*/
+/*start footer*/
+footer{
+    background-color:#dba182 ;
+    color: black;
+    padding: 20px;
+    font-size: 14px;
+}
+footer p{
+    text-align: center;
+}
+/* الحاضنة العامة لقسم "About" */
+.about {
+  display: flex;
+  align-items: center;    /* محاذاة الصورة والنص في المنتصف عمودياً */
+  justify-content: center; /* توسيط المحتوى أفقياً */
+  gap: 40px;             /* مسافة فاصلة بين الصورة والنص */
+  padding: 50px 20px;
+  background-color: #ddd; /* لون خلفية خفيف لتمييز القسم */
+  flex-wrap: wrap;        /* لضمان التوافق مع الشاشات الصغيرة */
+}
+
+
+.about h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #333;
+}
+
+.about .kat-image {
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+}
+
+
+.about .kat-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.about .kat-image img:hover {
+  transform: scale(1.03); 
+}
+.about .text {
+  flex: 1;
+  max-width: 500px;
+  text-align: left; 
+}
+
+
+.about .text h3 {
+  font-size: 24px;
+  color: #e02605;
+  margin-bottom: 15px;
+}
+
+.about .text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
